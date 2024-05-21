@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  background-color: #082e4e;
+  color: #d4eae9;
+}
+
+header {
+  background-color: #0e273c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header nav .logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+header .logo span {
+  color: #f0a500;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  /* margin-right: 40px; */
+}
+
+.nav-links a {
+  color: #d4eae9;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+nav .menu-icon,
+.menu-close {
+  display: none;
+}
+nav .menu-icon i,
+.menu-close i {
+  font-size: 1.5rem;
+}
+.z {
+  position: relative;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 850px) {
+  nav .menu-icon {
+    display: initial;
+  }
+  .nav-links {
+    position: absolute;
+    left: 0;
+    top: -600%;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #0e273c;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: top 0.55s ease !important;
+  }
+  .nav-links.active {
+    top: 87%;
+  }
+
+  .nav-links a {
+    color: #d4eae9;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .nav-links a:hover {
+    color: #f0a500;
+  }
+  .nav-links a.active {
+    color: red !important; /* Change to the color you want for the active link */
+  }
+  nav {
+    width: 100%;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 450px) {
+  header nav .logo {
+    font-size: 1.66rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #082e4e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d4eae9;
+}

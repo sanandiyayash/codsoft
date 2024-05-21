@@ -1,0 +1,70 @@
+.experience-section {
+  width: 80%;
+  margin: 74px auto;
+  padding: 20px;
+}
+
+.experience-section h1 {
+  color: #d4eae9;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.experience-card {
+  background-color: #0e273c;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.experience-card h2 {
+  color: #d4eae9;
+  margin: 20px 0;
+}
+
+.experience-card p {
+  color: #d4eae9;
+  line-height: 1.6;
+}
+.experience-info a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.technologies {
+  margin-top: 20px;
+}
+
+.technologies strong {
+  color: #ffae42;
+
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 970px) {
+  .experience-section {
+    width: 90%;
+  }
+  .experience-section h1 {
+    font-size: 2rem;
+  }
+  .experience-info {
+    max-height: 30vh;
+    overflow: auto;
+    padding: 10px;
+  }
+  .experience-info::-webkit-scrollbar {
+    width: 2px;
+  }
+  .experience-info::-webkit-scrollbar-track {
+    background: #082e4e;
+    border-radius: 10px;
+  }
+  .experience-info::-webkit-scrollbar-thumb {
+    background: #d4eae9;
+    border-radius: 10px;
+  }
+}

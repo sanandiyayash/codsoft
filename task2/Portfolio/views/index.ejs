@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Sanandiya Yash</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <%- include('./include/nav') %>
+
+        <section id="home">
+            <div class="content">
+                <p class="text-color-p p-s">Hi there,</p>
+                <h1><span class="text-color-p h1-f">My name is</span> <span class="name">Sanandiya Yash</span></h1>
+                <p class="text-color-s p-stack">I am a MERN-Stack Developer</p>
+                <div class="buttons">
+                    <button class="btn-1"><a href="/contact">Get In Touch</a></button>
+                    <button onclick="downloadResume()" class="btn-2">Download Resume</button>
+                </div>
+            </div>
+            <div class="illustration">
+                <img src="/images/home.png" alt="Developer illustration">
+            </div>
+        </section>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="/js/index.js"></script>
+</body>
+
+</html>

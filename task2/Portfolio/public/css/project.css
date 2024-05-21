@@ -1,0 +1,85 @@
+.projects-section {
+  width: 80vw;
+  margin: 74px auto;
+  padding: 20px;
+  position: relative;
+}
+
+.projects-section h1 {
+  color: #d4eae9;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.project-card {
+  background-color: #0e273c;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0px;
+  position: relative;
+  min-height: 50vh;
+}
+
+.project-card h2 {
+  color: #d4eae9;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.project-card p {
+  color: #d4eae9;
+  line-height: 1.6;
+  max-width: 80vw;
+  max-height: 40vh !important;
+  overflow: auto;
+  padding: 10px;
+}
+
+.project-card p::-webkit-scrollbar {
+  width: 2px;
+}
+.project-card p::-webkit-scrollbar-track {
+  background: #082e4e;
+  border-radius: 10px;
+}
+.project-card p::-webkit-scrollbar-thumb {
+  background: #d4eae9;
+  border-radius: 10px;
+}
+.technologies {
+  margin-top: 20px;
+}
+
+.technologies strong {
+  color: #ffae42;
+
+  font-weight: 700;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+}
+
+.icons a {
+  margin-left: 9px;
+  color: #d4eae9;
+  text-decoration: none;
+}
+
+.icons a i {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 980px) {
+  .projects-section {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .projects-section h1 {
+    font-size: 2rem;
+  }
+}

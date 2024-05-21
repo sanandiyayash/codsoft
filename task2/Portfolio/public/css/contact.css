@@ -1,0 +1,140 @@
+.alert {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.contact-section {
+  width: 90vw;
+  margin: 74px auto;
+  padding: 20px;
+}
+.contact-title {
+  text-align: center;
+  color: #d4eae9;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2vw;
+}
+.contact-info {
+  max-width: 59%;
+  text-align: center;
+  margin: auto;
+  color: #d4eae9;
+  line-height: 20px;
+}
+.socials h2 {
+  text-align: center;
+  color: #d4eae9;
+  margin: 2vw 0;
+}
+.social-icon-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+.s-icon a {
+  text-decoration: none;
+}
+.s-icon a i {
+  font-size: 1.7rem;
+  color: #eab41e;
+}
+hr {
+  max-width: 70%;
+  margin: auto;
+}
+.contact-card {
+  background-color: #0e273c;
+  border-radius: 10px;
+  max-width: 70%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.contact-card h2 {
+  color: #d4eae9;
+  margin-top: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: #d4eae9;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #eab41e;
+  color: #102b47;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #e69a36;
+}
+@media only screen and (max-width: 1010px) {
+  .contact-info {
+    max-width: 70vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-title {
+    margin-bottom: 4vw;
+    font-size: 4.5vw;
+  }
+  .socials h2 {
+    margin-top: 3.6vw;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .contact-section {
+    max-width: 95vw;
+  }
+  .contact-title {
+    margin-bottom: 4vw;
+    font-size: 2rem;
+  }
+  /* .contact-info{
+    max-width: 90vw;
+  } */
+  .contact-card {
+    max-width: 80vw;
+  }
+}
