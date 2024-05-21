@@ -53,9 +53,9 @@ app.get('/projects', (req, res) => {
 
     res.render('project.ejs');
 });
-app.get('/experiance', (req, res) => {
+app.get('/experience', (req, res) => {
 
-    res.render('experiance.ejs');
+    res.render('experience.ejs');
 });
 app.get('/contact', (req, res) => {
 
